@@ -12,35 +12,35 @@
         <meta name="author" content="PaddleOCR PMC">
       
       
-        <link rel="canonical" href="https://paddlepaddle.github.io/PaddleOCR/main/en/version3.x/pipeline_usage/PaddleOCR-VL-XPU.html">
+        <link rel="canonical" href="https://paddlepaddle.github.io/PaddleOCR/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.5.html">
       
       
-        <link rel="prev" href="PaddleOCR-VL-NVIDIA-Blackwell.html">
+        <link rel="prev" href="../../pipeline_usage/PaddleOCR-VL.html">
       
       
-        <link rel="next" href="PaddleOCR-VL-DCU.html">
+        <link rel="next" href="PaddleOCR-VL.html">
       
       
         
-          <link rel="alternate" href="../../../version3.x/pipeline_usage/PaddleOCR-VL-XPU.html" hreflang="zh">
+          <link rel="alternate" href="../../../../version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.5.html" hreflang="zh">
         
-          <link rel="alternate" href="PaddleOCR-VL-XPU.html" hreflang="en">
+          <link rel="alternate" href="PaddleOCR-VL-1.5.html" hreflang="en">
         
       
       
-      <link rel="icon" href="../../../version3.x/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <link rel="icon" href="../../../../version3.x/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>PaddleOCR-VL XPU Environment Configuration Tutorial - PaddleOCR Documentation</title>
+        <title>PaddleOCR-VL-1.5 Introduction - PaddleOCR Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
   
@@ -157,7 +157,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -182,7 +182,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#paddleocr-vl-xpu-environment-configuration-tutorial" class="md-skip">
+        <a href="#1-paddleocr-vl-15-introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -197,12 +197,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
 You're not viewing the latest version.
-<a href="../../../..">
+<a href="../../../../..">
     <strong>Click here to go to latest.</strong>
 </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -214,9 +214,9 @@ You're not viewing the latest version.
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="PaddleOCR Documentation" class="md-header__button md-logo" aria-label="PaddleOCR Documentation" data-md-component="logo">
+    <a href="../../../index.html" title="PaddleOCR Documentation" class="md-header__button md-logo" aria-label="PaddleOCR Documentation" data-md-component="logo">
       
-  <img src="../../../version3.x/logo.jpg" alt="logo">
+  <img src="../../../../version3.x/logo.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -233,7 +233,7 @@ You're not viewing the latest version.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PaddleOCR-VL XPU Environment Configuration Tutorial
+              PaddleOCR-VL-1.5 Introduction
             
           </span>
         </div>
@@ -280,13 +280,13 @@ You're not viewing the latest version.
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="../../../version3.x/pipeline_usage/PaddleOCR-VL-XPU.html" hreflang="zh" class="md-select__link">
+            <a href="../../../../version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.5.html" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="PaddleOCR-VL-XPU.html" hreflang="en" class="md-select__link">
+            <a href="PaddleOCR-VL-1.5.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -371,7 +371,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../../index.html" class="md-tabs__link">
+      <a href="../../../index.html" class="md-tabs__link">
         
   
   
@@ -390,7 +390,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../installation.html" class="md-tabs__link">
+      <a href="../../installation.html" class="md-tabs__link">
         
   
   
@@ -409,7 +409,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../../quick_start.html" class="md-tabs__link">
+      <a href="../../../quick_start.html" class="md-tabs__link">
         
   
   
@@ -430,7 +430,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="OCR.html" class="md-tabs__link">
+        <a href="../../pipeline_usage/OCR.html" class="md-tabs__link">
           
   
   
@@ -452,7 +452,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="PP-StructureV3.html" class="md-tabs__link">
+        <a href="../../pipeline_usage/PP-StructureV3.html" class="md-tabs__link">
           
   
   
@@ -474,7 +474,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="PP-ChatOCRv4.html" class="md-tabs__link">
+        <a href="../../pipeline_usage/PP-ChatOCRv4.html" class="md-tabs__link">
           
   
   
@@ -498,7 +498,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="PaddleOCR-VL.html" class="md-tabs__link">
+        <a href="../../pipeline_usage/PaddleOCR-VL.html" class="md-tabs__link">
           
   
   
@@ -520,7 +520,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../deployment/high_performance_inference.html" class="md-tabs__link">
+        <a href="../../deployment/high_performance_inference.html" class="md-tabs__link">
           
   
   
@@ -542,7 +542,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../module_usage/module_overview.html" class="md-tabs__link">
+        <a href="../../module_usage/module_overview.html" class="md-tabs__link">
           
   
   
@@ -564,7 +564,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="pipeline_overview.html" class="md-tabs__link">
+        <a href="../../pipeline_usage/pipeline_overview.html" class="md-tabs__link">
           
   
   
@@ -586,7 +586,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../other_devices_support/multi_devices_use_guide.html" class="md-tabs__link">
+        <a href="../../other_devices_support/multi_devices_use_guide.html" class="md-tabs__link">
           
   
   
@@ -608,7 +608,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../paddleocr_and_paddlex.html" class="md-tabs__link">
+        <a href="../../paddleocr_and_paddlex.html" class="md-tabs__link">
           
   
   
@@ -630,7 +630,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../paddlex/overview.html" class="md-tabs__link">
+        <a href="../../paddlex/overview.html" class="md-tabs__link">
           
   
   
@@ -652,7 +652,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../../data_anno_synth/overview.html" class="md-tabs__link">
+        <a href="../../../data_anno_synth/overview.html" class="md-tabs__link">
           
   
   
@@ -672,7 +672,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../../update/update.html" class="md-tabs__link">
+      <a href="../../../update/update.html" class="md-tabs__link">
         
   
   
@@ -693,7 +693,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../../version2.x/legacy/index.html" class="md-tabs__link">
+        <a href="../../../version2.x/legacy/index.html" class="md-tabs__link">
           
   
   
@@ -713,7 +713,7 @@ You're not viewing the latest version.
   
   
     <li class="md-tabs__item">
-      <a href="../../FAQ.html" class="md-tabs__link">
+      <a href="../../../FAQ.html" class="md-tabs__link">
         
   
   
@@ -734,7 +734,7 @@ You're not viewing the latest version.
     
     
       <li class="md-tabs__item">
-        <a href="../../community/community_contribution.html" class="md-tabs__link">
+        <a href="../../../community/community_contribution.html" class="md-tabs__link">
           
   
   
@@ -776,9 +776,9 @@ You're not viewing the latest version.
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="PaddleOCR Documentation" class="md-nav__button md-logo" aria-label="PaddleOCR Documentation" data-md-component="logo">
+    <a href="../../../index.html" title="PaddleOCR Documentation" class="md-nav__button md-logo" aria-label="PaddleOCR Documentation" data-md-component="logo">
       
-  <img src="../../../version3.x/logo.jpg" alt="logo">
+  <img src="../../../../version3.x/logo.jpg" alt="logo">
 
     </a>
     PaddleOCR Documentation
@@ -805,7 +805,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../../../index.html" class="md-nav__link">
         
   
   
@@ -832,7 +832,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../installation.html" class="md-nav__link">
+      <a href="../../installation.html" class="md-nav__link">
         
   
   
@@ -859,7 +859,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../quick_start.html" class="md-nav__link">
+      <a href="../../../quick_start.html" class="md-nav__link">
         
   
   
@@ -946,7 +946,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="OCR.html" class="md-nav__link">
+      <a href="../../pipeline_usage/OCR.html" class="md-nav__link">
         
   
   
@@ -974,7 +974,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../algorithm/PP-OCRv5/PP-OCRv5.html" class="md-nav__link">
+      <a href="../PP-OCRv5/PP-OCRv5.html" class="md-nav__link">
         
   
   
@@ -1002,7 +1002,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../algorithm/PP-OCRv5/PP-OCRv5_multi_languages.html" class="md-nav__link">
+      <a href="../PP-OCRv5/PP-OCRv5_multi_languages.html" class="md-nav__link">
         
   
   
@@ -1095,7 +1095,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="PP-StructureV3.html" class="md-nav__link">
+      <a href="../../pipeline_usage/PP-StructureV3.html" class="md-nav__link">
         
   
   
@@ -1123,7 +1123,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../algorithm/PP-StructureV3/PP-StructureV3.html" class="md-nav__link">
+      <a href="../PP-StructureV3/PP-StructureV3.html" class="md-nav__link">
         
   
   
@@ -1216,7 +1216,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="PP-ChatOCRv4.html" class="md-nav__link">
+      <a href="../../pipeline_usage/PP-ChatOCRv4.html" class="md-nav__link">
         
   
   
@@ -1244,7 +1244,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../algorithm/PP-ChatOCRv4/PP-ChatOCRv4.html" class="md-nav__link">
+      <a href="../PP-ChatOCRv4/PP-ChatOCRv4.html" class="md-nav__link">
         
   
   
@@ -1282,6 +1282,20 @@ You're not viewing the latest version.
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1346,7 +1360,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="PaddleOCR-VL.html" class="md-nav__link">
+      <a href="../../pipeline_usage/PaddleOCR-VL.html" class="md-nav__link">
         
   
   
@@ -1371,10 +1385,326 @@ You're not viewing the latest version.
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL-1.5 Introduction
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="PaddleOCR-VL-1.5.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL-1.5 Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-paddleocr-vl-15-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. PaddleOCR-VL-1.5 Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. PaddleOCR-VL-1.5 Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Metrics:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-model-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Model Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-model-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Model Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Model Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-omnidocbench-v15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. OmniDocBench v1.5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. OmniDocBench v1.5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paddleocr-vl-achieves-sota-performance-for-overall-text-formula-tables-and-reading-order-on-omnidocbench-v15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PaddleOCR-VL achieves SOTA performance for overall, text, formula, tables and reading order on OmniDocBench v1.5.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-real5-omnidocbench" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Real5-OmniDocBench
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Real5-OmniDocBench">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#across-all-five-diverse-and-challenging-scenariosscanning-warping-screen-photography-illumination-and-skewpaddleocr-vl-15-consistently-sets-new-sota-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Across all five diverse and challenging scenarios—scanning, warping, screen-photography, illumination, and skew—PaddleOCR-VL-1.5 consistently sets new SOTA records
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4inference-and-deployment-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4、Inference and deployment Performance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Visualization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-word-document-parsing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-word Document Parsing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Real-word Document Parsing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#illumination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Illumination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-photography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen Photography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scanning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-spotting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Spotting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seal-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seal Recognition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../algorithm/PaddleOCR-VL/PaddleOCR-VL.html" class="md-nav__link">
+      <a href="PaddleOCR-VL.html" class="md-nav__link">
         
   
   
@@ -1402,14 +1732,14 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="PaddleOCR-VL-NVIDIA-Blackwell.html" class="md-nav__link">
+      <a href="../../pipeline_usage/PaddleOCR-VL-NVIDIA-Blackwell.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PaddleOCR-VL NVIDIA Blackwell-Architecture GPUs Environment Configuration Tutorial
+    PaddleOCR-VL NVIDIA Blackwell-Architecture GPUs Usage Tutorial
   
 
     
@@ -1418,220 +1748,6 @@ You're not viewing the latest version.
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PaddleOCR-VL XPU Environment Configuration Tutorial
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="PaddleOCR-VL-XPU.html" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PaddleOCR-VL XPU Environment Configuration Tutorial
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-environment-preparation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Environment Preparation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Environment Preparation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-method-1-using-docker-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 Method 1: Using Docker Image
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-method-2-manually-install-paddlepaddle-and-paddleocr" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 Method 2: Manually Install PaddlePaddle and PaddleOCR
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Quick Start
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-enhancing-vlm-inference-performance-using-inference-acceleration-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Enhancing VLM Inference Performance Using Inference Acceleration Framework
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Enhancing VLM Inference Performance Using Inference Acceleration Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-starting-the-vlm-inference-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1 Starting the VLM Inference Service
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-client-usage-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.2 Client Usage Method
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-service-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Service Deployment
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Service Deployment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#43-client-invocation-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 Client Invocation Methods
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#44-pipeline-configuration-adjustment-instructions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 Pipeline Configuration Adjustment Instructions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-model-fine-tuning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Model Fine-Tuning
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1644,14 +1760,210 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="PaddleOCR-VL-DCU.html" class="md-nav__link">
+      <a href="../../pipeline_usage/PaddleOCR-VL-Kunlunxin-XPU.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PaddleOCR-VL DCU Environment Configuration Tutorial
+    PaddleOCR-VL Kunlunxin XPU Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-Hygon-DCU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL Hygon DCU Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-MetaX-GPU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL MetaX GPU Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-Iluvatar-GPU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL Iluvatar GPU Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-Huawei-Ascend-NPU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL Huawei Ascend NPU Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-Apple-Silicon.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL Apple Silicon Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-AMD-GPU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL AMD GPU Usage Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline_usage/PaddleOCR-VL-Intel-Arc-GPU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PaddleOCR-VL Intel Arc GPU Usage Tutorial
   
 
     
@@ -1751,7 +2063,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/high_performance_inference.html" class="md-nav__link">
+      <a href="../../deployment/high_performance_inference.html" class="md-nav__link">
         
   
   
@@ -1779,7 +2091,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/obtaining_onnx_models.html" class="md-nav__link">
+      <a href="../../deployment/obtaining_onnx_models.html" class="md-nav__link">
         
   
   
@@ -1807,7 +2119,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/on_device_deployment.html" class="md-nav__link">
+      <a href="../../deployment/on_device_deployment.html" class="md-nav__link">
         
   
   
@@ -1835,14 +2147,14 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/serving.html" class="md-nav__link">
+      <a href="../../deployment/serving.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sever Deployment
+    Server Deployment
   
 
     
@@ -1863,7 +2175,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/mcp_server.html" class="md-nav__link">
+      <a href="../../deployment/mcp_server.html" class="md-nav__link">
         
   
   
@@ -1891,7 +2203,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/packaging.html" class="md-nav__link">
+      <a href="../../deployment/packaging.html" class="md-nav__link">
         
   
   
@@ -1919,7 +2231,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="instructions/parallel_inference.html" class="md-nav__link">
+      <a href="../../pipeline_usage/instructions/parallel_inference.html" class="md-nav__link">
         
   
   
@@ -2005,7 +2317,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/cpp/OCR.html" class="md-nav__link">
+      <a href="../../deployment/cpp/OCR.html" class="md-nav__link">
         
   
   
@@ -2033,7 +2345,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../deployment/cpp/OCR_windows.html" class="md-nav__link">
+      <a href="../../deployment/cpp/OCR_windows.html" class="md-nav__link">
         
   
   
@@ -2069,7 +2381,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="instructions/benchmark.html" class="md-nav__link">
+      <a href="../../pipeline_usage/instructions/benchmark.html" class="md-nav__link">
         
   
   
@@ -2188,7 +2500,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/module_overview.html" class="md-nav__link">
+      <a href="../../module_usage/module_overview.html" class="md-nav__link">
         
   
   
@@ -2216,7 +2528,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/doc_img_orientation_classification.html" class="md-nav__link">
+      <a href="../../module_usage/doc_img_orientation_classification.html" class="md-nav__link">
         
   
   
@@ -2244,7 +2556,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/doc_vlm.html" class="md-nav__link">
+      <a href="../../module_usage/doc_vlm.html" class="md-nav__link">
         
   
   
@@ -2272,7 +2584,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/formula_recognition.html" class="md-nav__link">
+      <a href="../../module_usage/formula_recognition.html" class="md-nav__link">
         
   
   
@@ -2300,7 +2612,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/layout_detection.html" class="md-nav__link">
+      <a href="../../module_usage/layout_detection.html" class="md-nav__link">
         
   
   
@@ -2328,7 +2640,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/layout_analysis.html" class="md-nav__link">
+      <a href="../../module_usage/layout_analysis.html" class="md-nav__link">
         
   
   
@@ -2356,7 +2668,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/seal_text_detection.html" class="md-nav__link">
+      <a href="../../module_usage/seal_text_detection.html" class="md-nav__link">
         
   
   
@@ -2384,7 +2696,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/table_cells_detection.html" class="md-nav__link">
+      <a href="../../module_usage/table_cells_detection.html" class="md-nav__link">
         
   
   
@@ -2412,7 +2724,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/table_classification.html" class="md-nav__link">
+      <a href="../../module_usage/table_classification.html" class="md-nav__link">
         
   
   
@@ -2440,7 +2752,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/table_structure_recognition.html" class="md-nav__link">
+      <a href="../../module_usage/table_structure_recognition.html" class="md-nav__link">
         
   
   
@@ -2468,7 +2780,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/text_detection.html" class="md-nav__link">
+      <a href="../../module_usage/text_detection.html" class="md-nav__link">
         
   
   
@@ -2496,7 +2808,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/text_image_unwarping.html" class="md-nav__link">
+      <a href="../../module_usage/text_image_unwarping.html" class="md-nav__link">
         
   
   
@@ -2524,7 +2836,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/textline_orientation_classification.html" class="md-nav__link">
+      <a href="../../module_usage/textline_orientation_classification.html" class="md-nav__link">
         
   
   
@@ -2552,7 +2864,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/text_recognition.html" class="md-nav__link">
+      <a href="../../module_usage/text_recognition.html" class="md-nav__link">
         
   
   
@@ -2580,7 +2892,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../module_usage/chart_parsing.html" class="md-nav__link">
+      <a href="../../module_usage/chart_parsing.html" class="md-nav__link">
         
   
   
@@ -2683,7 +2995,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="pipeline_overview.html" class="md-nav__link">
+      <a href="../../pipeline_usage/pipeline_overview.html" class="md-nav__link">
         
   
   
@@ -2711,7 +3023,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="formula_recognition.html" class="md-nav__link">
+      <a href="../../pipeline_usage/formula_recognition.html" class="md-nav__link">
         
   
   
@@ -2739,7 +3051,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="doc_preprocessor.html" class="md-nav__link">
+      <a href="../../pipeline_usage/doc_preprocessor.html" class="md-nav__link">
         
   
   
@@ -2767,7 +3079,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="doc_understanding.html" class="md-nav__link">
+      <a href="../../pipeline_usage/doc_understanding.html" class="md-nav__link">
         
   
   
@@ -2795,7 +3107,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="seal_recognition.html" class="md-nav__link">
+      <a href="../../pipeline_usage/seal_recognition.html" class="md-nav__link">
         
   
   
@@ -2823,7 +3135,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="table_recognition_v2.html" class="md-nav__link">
+      <a href="../../pipeline_usage/table_recognition_v2.html" class="md-nav__link">
         
   
   
@@ -2851,7 +3163,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="PP-DocTranslation.html" class="md-nav__link">
+      <a href="../../pipeline_usage/PP-DocTranslation.html" class="md-nav__link">
         
   
   
@@ -2946,7 +3258,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../other_devices_support/multi_devices_use_guide.html" class="md-nav__link">
+      <a href="../../other_devices_support/multi_devices_use_guide.html" class="md-nav__link">
         
   
   
@@ -2974,7 +3286,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../other_devices_support/paddlepaddle_install_NPU.html" class="md-nav__link">
+      <a href="../../other_devices_support/paddlepaddle_install_NPU.html" class="md-nav__link">
         
   
   
@@ -3002,7 +3314,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../other_devices_support/paddlepaddle_install_XPU.html" class="md-nav__link">
+      <a href="../../other_devices_support/paddlepaddle_install_XPU.html" class="md-nav__link">
         
   
   
@@ -3097,7 +3409,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../paddleocr_and_paddlex.html" class="md-nav__link">
+      <a href="../../paddleocr_and_paddlex.html" class="md-nav__link">
         
   
   
@@ -3125,7 +3437,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../update/upgrade_notes.html" class="md-nav__link">
+      <a href="../../../update/upgrade_notes.html" class="md-nav__link">
         
   
   
@@ -3153,7 +3465,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../logging.html" class="md-nav__link">
+      <a href="../../logging.html" class="md-nav__link">
         
   
   
@@ -3246,7 +3558,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../paddlex/overview.html" class="md-nav__link">
+      <a href="../../paddlex/overview.html" class="md-nav__link">
         
   
   
@@ -3274,7 +3586,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../paddlex/quick_start.html" class="md-nav__link">
+      <a href="../../paddlex/quick_start.html" class="md-nav__link">
         
   
   
@@ -3381,7 +3693,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../data_anno_synth/overview.html" class="md-nav__link">
+      <a href="../../../data_anno_synth/overview.html" class="md-nav__link">
         
   
   
@@ -3409,7 +3721,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../data_anno_synth/data_annotation.html" class="md-nav__link">
+      <a href="../../../data_anno_synth/data_annotation.html" class="md-nav__link">
         
   
   
@@ -3437,7 +3749,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../data_anno_synth/data_synthesis.html" class="md-nav__link">
+      <a href="../../../data_anno_synth/data_synthesis.html" class="md-nav__link">
         
   
   
@@ -3465,7 +3777,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/datasets.html" class="md-nav__link">
+      <a href="../../../datasets/datasets.html" class="md-nav__link">
         
   
   
@@ -3493,7 +3805,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/handwritten_datasets.html" class="md-nav__link">
+      <a href="../../../datasets/handwritten_datasets.html" class="md-nav__link">
         
   
   
@@ -3521,7 +3833,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/vertical_and_multilingual_datasets.html" class="md-nav__link">
+      <a href="../../../datasets/vertical_and_multilingual_datasets.html" class="md-nav__link">
         
   
   
@@ -3549,7 +3861,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/layout_datasets.html" class="md-nav__link">
+      <a href="../../../datasets/layout_datasets.html" class="md-nav__link">
         
   
   
@@ -3577,7 +3889,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/table_datasets.html" class="md-nav__link">
+      <a href="../../../datasets/table_datasets.html" class="md-nav__link">
         
   
   
@@ -3605,7 +3917,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../datasets/kie_datasets.html" class="md-nav__link">
+      <a href="../../../datasets/kie_datasets.html" class="md-nav__link">
         
   
   
@@ -3640,7 +3952,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../update/update.html" class="md-nav__link">
+      <a href="../../../update/update.html" class="md-nav__link">
         
   
   
@@ -3710,7 +4022,7 @@ You're not viewing the latest version.
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../version2.x/legacy/index.html" class="md-nav__link ">
+            <a href="../../../version2.x/legacy/index.html" class="md-nav__link ">
               
   
   
@@ -3754,7 +4066,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/model_list_2.x.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/model_list_2.x.html" class="md-nav__link">
         
   
   
@@ -3782,7 +4094,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/python_infer.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/python_infer.html" class="md-nav__link">
         
   
   
@@ -3810,7 +4122,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/cpp_infer.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/cpp_infer.html" class="md-nav__link">
         
   
   
@@ -3838,7 +4150,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/windows_vs2019_build.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/windows_vs2019_build.html" class="md-nav__link">
         
   
   
@@ -3866,14 +4178,14 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/paddle_server.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/paddle_server.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sever Deployment
+    Server Deployment
   
 
     
@@ -3894,7 +4206,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/android_demo.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/android_demo.html" class="md-nav__link">
         
   
   
@@ -3922,7 +4234,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/lite.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/lite.html" class="md-nav__link">
         
   
   
@@ -3950,7 +4262,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/paddle2onnx.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/paddle2onnx.html" class="md-nav__link">
         
   
   
@@ -3978,7 +4290,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/paddle_cloud.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/paddle_cloud.html" class="md-nav__link">
         
   
   
@@ -4006,7 +4318,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../version2.x/legacy/benchmark.html" class="md-nav__link">
+      <a href="../../../version2.x/legacy/benchmark.html" class="md-nav__link">
         
   
   
@@ -4041,7 +4353,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../FAQ.html" class="md-nav__link">
+      <a href="../../../FAQ.html" class="md-nav__link">
         
   
   
@@ -4126,7 +4438,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../community/community_contribution.html" class="md-nav__link">
+      <a href="../../../community/community_contribution.html" class="md-nav__link">
         
   
   
@@ -4154,7 +4466,7 @@ You're not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../../community/code_and_doc.html" class="md-nav__link">
+      <a href="../../../community/code_and_doc.html" class="md-nav__link">
         
   
   
@@ -4199,8 +4511,6 @@ You're not viewing the latest version.
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4209,22 +4519,22 @@ You're not viewing the latest version.
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-environment-preparation" class="md-nav__link">
+  <a href="#1-paddleocr-vl-15-introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Environment Preparation
+        1. PaddleOCR-VL-1.5 Introduction
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Environment Preparation">
+    <nav class="md-nav" aria-label="1. PaddleOCR-VL-1.5 Introduction">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-method-1-using-docker-image" class="md-nav__link">
+  <a href="#key-metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1 Method 1: Using Docker Image
+        Key Metrics:
       
     </span>
   </a>
@@ -4232,10 +4542,10 @@ You're not viewing the latest version.
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-method-2-manually-install-paddlepaddle-and-paddleocr" class="md-nav__link">
+  <a href="#core-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2 Method 2: Manually Install PaddlePaddle and PaddleOCR
+        Core Features
       
     </span>
   </a>
@@ -4248,10 +4558,10 @@ You're not viewing the latest version.
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-quick-start" class="md-nav__link">
+  <a href="#2-model-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Quick Start
+        2. Model Architecture
       
     </span>
   </a>
@@ -4259,33 +4569,34 @@ You're not viewing the latest version.
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-enhancing-vlm-inference-performance-using-inference-acceleration-framework" class="md-nav__link">
+  <a href="#3-model-performance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Enhancing VLM Inference Performance Using Inference Acceleration Framework
+        3. Model Performance
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Enhancing VLM Inference Performance Using Inference Acceleration Framework">
+    <nav class="md-nav" aria-label="3. Model Performance">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-starting-the-vlm-inference-service" class="md-nav__link">
+  <a href="#1-omnidocbench-v15" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1 Starting the VLM Inference Service
+        1. OmniDocBench v1.5
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="1. OmniDocBench v1.5">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#32-client-usage-method" class="md-nav__link">
+  <a href="#paddleocr-vl-achieves-sota-performance-for-overall-text-formula-tables-and-reading-order-on-omnidocbench-v15" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2 Client Usage Method
+        PaddleOCR-VL achieves SOTA performance for overall, text, formula, tables and reading order on OmniDocBench v1.5.
       
     </span>
   </a>
@@ -4296,35 +4607,24 @@ You're not viewing the latest version.
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-service-deployment" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-real5-omnidocbench" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Service Deployment
+        2. Real5-OmniDocBench
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Service Deployment">
+    <nav class="md-nav" aria-label="2. Real5-OmniDocBench">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#43-client-invocation-methods" class="md-nav__link">
+  <a href="#across-all-five-diverse-and-challenging-scenariosscanning-warping-screen-photography-illumination-and-skewpaddleocr-vl-15-consistently-sets-new-sota-records" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3 Client Invocation Methods
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#44-pipeline-configuration-adjustment-instructions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 Pipeline Configuration Adjustment Instructions
+        Across all five diverse and challenging scenarios—scanning, warping, screen-photography, illumination, and skew—PaddleOCR-VL-1.5 consistently sets new SOTA records
       
     </span>
   </a>
@@ -4335,15 +4635,131 @@ You're not viewing the latest version.
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#5-model-fine-tuning" class="md-nav__link">
+  <a href="#4inference-and-deployment-performance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Model Fine-Tuning
+        4、Inference and deployment Performance
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Visualization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#real-word-document-parsing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-word Document Parsing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Real-word Document Parsing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#illumination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Illumination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-photography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen Photography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scanning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warping
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-spotting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Spotting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seal-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seal Recognition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4389,7 +4805,7 @@ You're not viewing the latest version.
 <!-- Actions -->
 
   
-    <a href="https://github.com/PaddlePaddle/PaddleOCR/edit/main/docs/version3.x/pipeline_usage/PaddleOCR-VL-XPU.en.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/PaddlePaddle/PaddleOCR/edit/main/docs/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.5.en.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -4398,7 +4814,7 @@ You're not viewing the latest version.
     
       
     
-    <a href="https://github.com/PaddlePaddle/PaddleOCR/raw/main/docs/version3.x/pipeline_usage/PaddleOCR-VL-XPU.en.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/PaddlePaddle/PaddleOCR/raw/main/docs/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.5.en.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
@@ -4410,106 +4826,108 @@ You're not viewing the latest version.
   page title (or respectively site name) is used as the main headline.
 -->
 
+  <h1>PaddleOCR-VL-1.5 Introduction</h1>
+
 
 
 
 <!-- Page content -->
-<h1 id="paddleocr-vl-xpu-environment-configuration-tutorial">PaddleOCR-VL XPU Environment Configuration Tutorial<a class="headerlink" href="#paddleocr-vl-xpu-environment-configuration-tutorial" title="Permanent link">&para;</a></h1>
-<p>This tutorial is a guide for configuring the environment for PaddleOCR-VL XPU. After completing the environment setup, please refer to the <a href="PaddleOCR-VL.html">PaddleOCR-VL Usage Tutorial</a> to use PaddleOCR-VL.</p>
-<h2 id="1-environment-preparation">1. Environment Preparation<a class="headerlink" href="#1-environment-preparation" title="Permanent link">&para;</a></h2>
-<p>This step mainly introduces how to set up the runtime environment for PaddleOCR-VL. There are two methods available; choose one as needed:</p>
-<ul>
-<li>
-<p>Method 1: Use the official Docker image.</p>
-</li>
-<li>
-<p>Method 2: Manually install PaddlePaddle and PaddleOCR.</p>
-</li>
-</ul>
-<h3 id="11-method-1-using-docker-image">1.1 Method 1: Using Docker Image<a class="headerlink" href="#11-method-1-using-docker-image" title="Permanent link">&para;</a></h3>
-<p>We recommend using the official Docker image (requires Docker version &gt;= 19.03):</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span>-it<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span>--network<span class="w"> </span>host<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>--user<span class="w"> </span>root<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span>--shm-size<span class="w"> </span>64G<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span>ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-vl:latest-xpu<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span>/bin/bash
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># Call PaddleOCR CLI or Python API in the container</span>
-</span></code></pre></div>
-<p>If you wish to start the service in an environment without internet access, replace <code>ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-vl:latest-xpu</code> (image size approximately 12 GB) in the above command with the offline version image <code>ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-vl:latest-xpu-offline</code> (image size approximately 14 GB).</p>
-<h3 id="12-method-2-manually-install-paddlepaddle-and-paddleocr">1.2 Method 2: Manually Install PaddlePaddle and PaddleOCR<a class="headerlink" href="#12-method-2-manually-install-paddlepaddle-and-paddleocr" title="Permanent link">&para;</a></h3>
-<p>If you cannot use Docker, you can also manually install PaddlePaddle and PaddleOCR. The required Python version is 3.8–3.12.</p>
-<p><strong>We strongly recommend installing PaddleOCR-VL in a virtual environment to avoid dependency conflicts.</strong> For example, use the Python venv standard library to create a virtual environment:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Create a virtual environment</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv_paddleocr
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Activate the environment</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">source</span><span class="w"> </span>.venv_paddleocr/bin/activate
-</span></code></pre></div>
-<p>Execute the following commands to complete the installation:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>paddlepaddle-xpu<span class="o">==</span><span class="m">3</span>.2.1<span class="w"> </span>-i<span class="w"> </span>https://www.paddlepaddle.org.cn/packages/stable/xpu-p800/
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span><span class="s2">&quot;paddleocr[doc-parser]&quot;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>https://paddle-whl.bj.bcebos.com/nightly/cu126/safetensors/safetensors-0.6.2.dev0-cp38-abi3-linux_x86_64.whl
-</span></code></pre></div>
-<blockquote>
-<p><strong>Please ensure to install PaddlePaddle version 3.2.1 or above, along with the special version of safetensors.</strong></p>
-</blockquote>
-<h2 id="2-quick-start">2. Quick Start<a class="headerlink" href="#2-quick-start" title="Permanent link">&para;</a></h2>
-<p>Please refer to the corresponding section in the <a href="PaddleOCR-VL.html">PaddleOCR-VL Usage Tutorial</a>.</p>
-<h2 id="3-enhancing-vlm-inference-performance-using-inference-acceleration-framework">3. Enhancing VLM Inference Performance Using Inference Acceleration Framework<a class="headerlink" href="#3-enhancing-vlm-inference-performance-using-inference-acceleration-framework" title="Permanent link">&para;</a></h2>
-<p>The inference performance under default configurations is not fully optimized and may not meet actual production requirements. This step mainly introduces how to use the FastDeploy inference acceleration framework to enhance the inference performance of PaddleOCR-VL.</p>
-<h3 id="31-starting-the-vlm-inference-service">3.1 Starting the VLM Inference Service<a class="headerlink" href="#31-starting-the-vlm-inference-service" title="Permanent link">&para;</a></h3>
-<p>PaddleOCR provides a Docker image for quickly starting the FastDeploy inference service. Use the following command to start the service (requires Docker version &gt;= 19.03):</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span>-it<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>--rm<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>--gpus<span class="w"> </span>all<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>--network<span class="w"> </span>host<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span>--shm-size<span class="w"> </span>64G<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span>ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-genai-fastdeploy-server:latest-xpu<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span>paddleocr<span class="w"> </span>genai_server<span class="w"> </span>--model_name<span class="w"> </span>PaddleOCR-VL-0.9B<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8118</span><span class="w"> </span>--backend<span class="w"> </span>fastdeploy
-</span></code></pre></div>
-<p>If you wish to start the service in an environment without internet access, replace <code>ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-genai-fastdeploy-server:latest-xpu</code> (image size approximately 47 GB) in the above command with the offline version image <code>ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-genai-fastdeploy-server:latest-xpu-offline</code> (image size approximately 49 GB).</p>
-<h3 id="32-client-usage-method">3.2 Client Usage Method<a class="headerlink" href="#32-client-usage-method" title="Permanent link">&para;</a></h3>
-<p>Please refer to the corresponding section in the <a href="PaddleOCR-VL.html">PaddleOCR-VL Usage Tutorial</a>.</p>
-<h2 id="4-service-deployment">4. Service Deployment<a class="headerlink" href="#4-service-deployment" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Please note that the PaddleOCR-VL service introduced in this section differs from the VLM inference service in the previous section: the latter is only responsible for one part of the complete process (i.e., VLM inference) and is called as an underlying service by the former.</p>
-</blockquote>
-<p>This step mainly introduces how to deploy PaddleOCR-VL as a service and call it using Docker Compose. The specific process is as follows:</p>
+<h2 id="1-paddleocr-vl-15-introduction">1. PaddleOCR-VL-1.5 Introduction<a class="headerlink" href="#1-paddleocr-vl-15-introduction" title="Permanent link">&para;</a></h2>
+<p><strong>PaddleOCR-VL-1.5</strong> is an advanced next-generation model of PaddleOCR-VL, achieving a new state-of-the-art accuracy of 94.5% on OmniDocBench v1.5. To rigorously evaluate robustness against real-world physical distortions—including scanning artifacts, skew, warping, screen photography, and illumination—we propose the Real5-OmniDocBench benchmark. Experimental results demonstrate that this enhanced model attains SOTA performance on the newly curated benchmark. Furthermore, we extend the model’s capabilities by incorporating seal recognition and text spotting tasks, while remaining a 0.9B ultra-compact VLM with high efficiency.</p>
+<h3 id="key-metrics">Key Metrics:<a class="headerlink" href="#key-metrics" title="Permanent link">&para;</a></h3>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/paddleocr-vl-1.5_metrics.png" width="800"/>
+</div>
+
+<h3 id="core-features"><strong>Core Features</strong><a class="headerlink" href="#core-features" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>Copy the content from <a href="https://github.com/PaddlePaddle/PaddleOCR/blob/main/deploy/paddleocr_vl_docker/compose_xpu.yaml">here</a> and save it as a <code>compose.yaml</code> file.</p>
+<p>With a <strong>parameter size of 0.9B</strong>, PaddleOCR-VL-1.5 <strong>achieves xxx% accuracy on OmniDocBench v1.5</strong>, surpassing the previous SOTA model PaddleOCR-VL. Significant improvements are observed in <strong>table, formula, and text understanding.</strong></p>
 </li>
 <li>
-<p>Copy the following content and save it as a <code>.env</code> file:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>API_IMAGE_TAG_SUFFIX=latest-xpu-offline
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>VLM_BACKEND=fastdeploy
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>VLM_IMAGE_TAG_SUFFIX=latest-xpu-offline
-</span></code></pre></div>
+<p><strong>It introduces an innovative approach to document parsing by supporting irregular-shaped localization</strong>, enabling accurate polygonal detection under skewed and curved document conditions. Evaluations across five real-world scenarios—scanning, curving, skewing, screen-photo capture, and light variation—demonstrate superior performance over mainstream open-source and proprietary models.</p>
 </li>
 <li>
-<p>Execute the following command in the directory where <code>compose.yaml</code> and <code>.env</code> files are located to start the server, which listens on port <strong>8080</strong> by default:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Must be executed in the directory where compose.yaml and .env files are located</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>up
-</span></code></pre></div>
-<p>After starting, you will see output similar to the following:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>paddleocr-vl-api             | INFO:     Started server process [1]
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>paddleocr-vl-api             | INFO:     Waiting for application startup.
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>paddleocr-vl-api             | INFO:     Application startup complete.
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>paddleocr-vl-api             | INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
-</span></code></pre></div>
+<p>The model introduces <strong>text spotting (text-line localization and recognition)</strong>, along with <strong>seal recognition</strong>, with all corresponding metrics <strong>setting new SOTA results</strong> in their respective tasks.</p>
+</li>
+<li>
+<p>PaddleOCR-VL-1.5 further strengthens its capability in <strong>specialized scenarios and multilingual recognition.</strong> Recognition performance is improved for <strong>rare characters, ancient texts, multilingual tables, underlines, and checkboxes,</strong> and language coverage is extended to include <strong>China's Tibetan script and Bengali.</strong></p>
+</li>
+<li>
+<p>The model supports <strong>automatic cross-page table merging</strong> and <strong>cross-page paragraph heading recognition</strong>, effectively mitigating content fragmentation issues in <strong>long-document parsing.</strong></p>
 </li>
 </ol>
-<p>This method accelerates VLM inference based on the FastDeploy framework and is more suitable for production environment deployment.</p>
-<p>Additionally, after starting the server using this method, no internet connection is required except for pulling the image. If you need to deploy in an offline environment, you can first pull the images involved in the Compose file on a connected machine, export them, and transfer them to the offline machine for import to start the service in an offline environment.</p>
-<p>If you need to adjust pipeline configurations (such as model path, batch size, deployment device, etc.), please refer to section 4.4.</p>
-<h3 id="43-client-invocation-methods">4.3 Client Invocation Methods<a class="headerlink" href="#43-client-invocation-methods" title="Permanent link">&para;</a></h3>
-<p>Please refer to the corresponding section in the <a href="PaddleOCR-VL.html">PaddleOCR-VL Usage Tutorial</a>.</p>
-<h3 id="44-pipeline-configuration-adjustment-instructions">4.4 Pipeline Configuration Adjustment Instructions<a class="headerlink" href="#44-pipeline-configuration-adjustment-instructions" title="Permanent link">&para;</a></h3>
-<p>Please refer to the corresponding section in the <a href="PaddleOCR-VL.html">PaddleOCR-VL Usage Tutorial</a>.</p>
-<h2 id="5-model-fine-tuning">5. Model Fine-Tuning<a class="headerlink" href="#5-model-fine-tuning" title="Permanent link">&para;</a></h2>
-<p>Please refer to the corresponding section in the <a href="PaddleOCR-VL.html">PaddleOCR-VL Usage Tutorial</a>.</p>
+<h2 id="2-model-architecture">2. Model Architecture<a class="headerlink" href="#2-model-architecture" title="Permanent link">&para;</a></h2>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/PaddleOCR-VL-1.5.png" width="800"/>
+</div>
+
+<h2 id="3-model-performance">3. Model Performance<a class="headerlink" href="#3-model-performance" title="Permanent link">&para;</a></h2>
+<h3 id="1-omnidocbench-v15">1. OmniDocBench v1.5<a class="headerlink" href="#1-omnidocbench-v15" title="Permanent link">&para;</a></h3>
+<h4 id="paddleocr-vl-achieves-sota-performance-for-overall-text-formula-tables-and-reading-order-on-omnidocbench-v15">PaddleOCR-VL achieves SOTA performance for overall, text, formula, tables and reading order on OmniDocBench v1.5.<a class="headerlink" href="#paddleocr-vl-achieves-sota-performance-for-overall-text-formula-tables-and-reading-order-on-omnidocbench-v15" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/omnidocbenchv1.5_metrics.png" width="800"/>
+</div>
+
+<blockquote>
+<p><strong>Notes:</strong> 
+- Performance metrics are cited from the <a href="https://opendatalab.com/omnidocbench">OmniDocBench official leaderboard</a>, except for Gemini-3 Pro, Qwen3-VL-235B-A22B-Instruct and our model, which were evaluated independently.</p>
+</blockquote>
+<h3 id="2-real5-omnidocbench">2. Real5-OmniDocBench<a class="headerlink" href="#2-real5-omnidocbench" title="Permanent link">&para;</a></h3>
+<h4 id="across-all-five-diverse-and-challenging-scenariosscanning-warping-screen-photography-illumination-and-skewpaddleocr-vl-15-consistently-sets-new-sota-records">Across all five diverse and challenging scenarios—scanning, warping, screen-photography, illumination, and skew—PaddleOCR-VL-1.5 consistently sets new SOTA records<a class="headerlink" href="#across-all-five-diverse-and-challenging-scenariosscanning-warping-screen-photography-illumination-and-skewpaddleocr-vl-15-consistently-sets-new-sota-records" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/real5-omnidocbench_metrics.png" width="800"/>
+</div>
+
+<blockquote>
+<p><strong>Notes:</strong> 
+- Real5-OmniDocBench is a brand-new benchmark oriented toward real-world scenarios, which we constructed based on the OmniDocBench v1.5 dataset. The dataset comprises five distinct scenarios: Scanning, Warping, Screen-photography, Illumination, and Skew. For further details, please refer to <a href="https://huggingface.co/datasets/PaddlePaddle/Real5-OmniDocBench">Real5-OmniDocBench</a>.</p>
+</blockquote>
+<h2 id="4inference-and-deployment-performance">4、Inference and deployment Performance<a class="headerlink" href="#4inference-and-deployment-performance" title="Permanent link">&para;</a></h2>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/inference_performance.png" width="600"/>
+</div>
+
+<blockquote>
+<p><strong>Notes:</strong> 
+- End-to-End Inference Performance Comparison on OmniDocBench v1.5. PDF documents were processed in batches of 512 on a single NVIDIA A100 GPU. The reported end-to-end runtime includes both PDF rendering and Markdown generation. All methods rely on their built-in PDF parsing modules and default DPI settings to reflect out-of-the-box performance. </p>
+</blockquote>
+<h2 id="5-visualization">5. Visualization<a class="headerlink" href="#5-visualization" title="Permanent link">&para;</a></h2>
+<h3 id="real-word-document-parsing">Real-word Document Parsing<a class="headerlink" href="#real-word-document-parsing" title="Permanent link">&para;</a></h3>
+<h4 id="illumination">Illumination<a class="headerlink" href="#illumination" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/light.jpg" width="800"/>
+</div>
+
+<h4 id="skew">Skew<a class="headerlink" href="#skew" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/skew.jpg" width="800"/>
+</div>
+
+<h4 id="screen-photography">Screen Photography<a class="headerlink" href="#screen-photography" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/screen.jpg" width="800"/>
+</div>
+
+<h4 id="scanning">Scanning<a class="headerlink" href="#scanning" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/scaning.jpg" width="800"/>
+</div>
+
+<h4 id="warping">Warping<a class="headerlink" href="#warping" title="Permanent link">&para;</a></h4>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/curving.jpg" width="800"/>
+</div>
+
+<h3 id="text-spotting">Text Spotting<a class="headerlink" href="#text-spotting" title="Permanent link">&para;</a></h3>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/spotting.jpg" width="800"/>
+</div>
+
+<h3 id="seal-recognition">Seal Recognition<a class="headerlink" href="#seal-recognition" title="Permanent link">&para;</a></h3>
+<div align="center">
+<img src="https://raw.githubusercontent.com/cuicheng01/PaddleX_doc_images/refs/heads/main/images/paddleocr_vl_1_5/seal.jpg" width="800"/>
+</div>
 
 <!-- Source file information -->
 
@@ -4519,9 +4937,6 @@ You're not viewing the latest version.
 
 
 
-  
-  
-
 
 
 <!-- Was this page helpful? -->
@@ -4530,51 +4945,6 @@ You're not viewing the latest version.
 
 
 <!-- Comment system -->
-
-<h2 id="__comments">Comments</h2>
-<!-- Insert generated snippet here -->
-
-<script src="https://giscus.app/client.js" data-repo="PaddlePaddle/PaddleOCR"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkyNjIyOTYxMjI=" data-category="Q&A" data-category-id="DIC_kwDOD6JSOs4COrbO"
-    data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
-    data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
-</script>
-
-<!-- Synchronize Giscus theme with palette -->
-<script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-        // Instruct Giscus to set theme
-        giscus.setAttribute("data-theme", theme)
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        var ref = document.querySelector("[data-md-component=palette]")
-        ref.addEventListener("change", function () {
-            var palette = __md_get("__palette")
-            if (palette && typeof palette.color === "object") {
-                var theme = palette.color.scheme === "slate"
-                    ? "transparent_dark"
-                    : "light"
-
-                // Instruct Giscus to change theme
-                var frame = document.querySelector(".giscus-frame")
-                frame.contentWindow.postMessage(
-                    { giscus: { setConfig: { theme } } },
-                    "https://giscus.app"
-                )
-            }
-        })
-    })
-</script>
 
                 
               </article>
@@ -4601,7 +4971,7 @@ You're not viewing the latest version.
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="PaddleOCR-VL-NVIDIA-Blackwell.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: PaddleOCR-VL NVIDIA Blackwell-Architecture GPUs Environment Configuration Tutorial">
+          <a href="../../pipeline_usage/PaddleOCR-VL.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Usage Tutorial">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -4611,20 +4981,20 @@ You're not viewing the latest version.
                 Previous
               </span>
               <div class="md-ellipsis">
-                PaddleOCR-VL NVIDIA Blackwell-Architecture GPUs Environment Configuration Tutorial
+                Usage Tutorial
               </div>
             </div>
           </a>
         
         
           
-          <a href="PaddleOCR-VL-DCU.html" class="md-footer__link md-footer__link--next" aria-label="Next: PaddleOCR-VL DCU Environment Configuration Tutorial">
+          <a href="PaddleOCR-VL.html" class="md-footer__link md-footer__link--next" aria-label="Next: PaddleOCR-VL Introduction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                PaddleOCR-VL DCU Environment Configuration Tutorial
+                PaddleOCR-VL Introduction
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -4692,12 +5062,12 @@ You're not viewing the latest version.
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["announce.dismiss", "content.tooltips", "content.code.copy", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.action.view", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.footer", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../javascripts/katex.min.js"></script>
+        <script src="../../../../javascripts/katex.min.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
